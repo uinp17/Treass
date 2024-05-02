@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>REPRODUCTOR</title>
+
+	<link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album-rtl/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+	<link href="assets/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/0f25780317.js" crossorigin="anonymous"></script>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.audioControls.min.js"></script>
+
+	<script src="js/funciones.js"></script>
+	
+	<style type="text/css">
+		.botoncabecera{
+			background-color: #33CAFF;
+		}
+		.container{
+			background: lightblue;
+		}
+		.cancion{
+			background-color: #33CAFF;
+		}
+		.musica{
+			background: lightblue;
+		}
+	</style>
+
+</head>
+<body>
+<section class="row mt-3">
+<main class="col-md-5">
+
+<div class="container">
+	<div class="row justify-content-between">
+		<div class="col-auto botoncabecera">
+				<div class="botones">
+					<i class="fa-solid fa-arrow-left"></i>
+				</div>  
+		</div>
+		<div class="col-auto botoncabecera">
+			<p class="d-none d-md-block d-lg-block">reproduciendo ahora</p>
+			<p class="d-block d-md-none d-lg-none">reproduciendo</p>
+		</div>
+		<div class="col-auto botoncabecera">
+				<div class="botones">
+					<i class="fa-solid fa-bars"></i>
+				</div> 
+		</div>
+	</div>
+
+	<div class="row text-center">
+		<div class="col">
+			<br><br>
+			<img src="portada.jpg" width="150px" class="rounded-circle">
+		</div>
+	</div>
+
+	<div class="row text-center">
+		<div class="col">
+			<br><br>
+			<h2>Vicente Fernandez</h2>
+			<h3>Un millón de primaveras</h3> 
+			<br><br>
+		</div>
+	</div>
+
+	<div class="row">
+		
+		<div class="row justify-content-between">
+			<span class="col-3 nombremp3"></span>
+			<span class="col-3 text-end audioTime" data-attr="timer"></span>
+		</div>
+
+
+
+		<div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+ 	 	<div class="progress-bar progress-bar-striped progress-bar-animated updateProgress"></div>
+		</div>
+		
+	</div> 
+	<br><br>
+</div>
+<br>
+</main>
+
+	<aside class="musica col-md-5">
+<br>	
+		<div class="container">
+
+		<ul class="list-group mt-5 playlist">
+		  <li class="list-group-item" data-src="audios/NO ME SUELTES.MP3">
+		  	<a href="#">Rauw Alejandro - No me sueltes</a>
+		  </li>
+		  <li class="list-group-item" data-src="audios/COSA GUAPA.MP3">
+		  	<a href="#">Rauw Alejandro - Cosa Guapa</a>
+		  </li>
+		  <li class="list-group-item" data-src="audios/CUANDO FUE.MP3">
+		  	<a href="#">Rauw Alejandro - Cuándo Fue</a>
+		  </li>
+		  <li class="list-group-item" data-src="audios/DESENFOCAO.MP3">
+		  	<a href="#">Rauw Alejandro - Desenfocao</a>
+		  </li>
+		  <li class="list-group-item" data-src="audios/DE CORA.MP3">
+		  	<a href="#">Rauw Alejandro  J Balvin -   De Cora</a>
+		  </li>
+		</ul>
+
+		<hr>
+		</div>
+
+
+	</aside>
+
+</section>
+</body>
+</html>
